@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Bina Mitra Indoselahtera - Pembelian</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-2 col-md-3 sidebar d-print-none">
+                <div class="logo">PT Bina Mitra Indoselahtera</div>
+                <ul class="nav flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="bi bi-house-door"></i> Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="purchase.html">
+                            <i class="bi bi-cart-check"></i> PURCHASE
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inventory.html">
+                            <i class="bi bi-boxes"></i> INVENTORY
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="basedata.html">
+                            <i class="bi bi-database"></i> BASE DATA
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="settings.html">
+                            <i class="bi bi-gear"></i> SETTINGS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-people"></i> Users
+                        </a>
+                    </li>
+                    <li class="nav-item mt-4">
+                        <a class="nav-link" href="login.html">
+                            <i class="bi bi-box-arrow-left"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col-lg-10 col-md-9 main-content">
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h1 class="h3 mb-0">Pembelian</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Pembelian</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-end">
+                                <div class="search-bar me-3">
+                                    <i class="bi bi-search"></i>
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                        <i class="bi bi-person-circle me-1"></i> Admin User
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Purchase Form -->
+                <div class="form-container">
+                    <h4>Edit Warehouse Receipt</h4>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Warehouse Receipt No.</label>
+                            <input type="text" class="form-control" value="WR230276" readonly>
+                        </div>
+                        <div class="col-md-8">
+                            <label class="form-label">Select supplier / Search ends by pressing ENTER</label>
+                            <input type="text" class="form-control" value="JAKARTA (012)">
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <label class="form-label">Search item ends by pressing ENTER</label>
+                            <input type="text" class="form-control" placeholder="30OW">
+                        </div>
+                    </div>
+                    
+                    <div class="table-container mt-4">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Item Code</th>
+                                    <th>Brand</th>
+                                    <th>Item Name</th>
+                                    <th>Model</th>
+                                    <th>Spec</th>
+                                    <th>Unit</th>
+                                    <th>Select Warehouse</th>
+                                    <th>Qty</th>
+                                    <th>Remark</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0200201593</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <select class="form-select">
+                                            <option>02Gudang Bojo(船厂仓库)</option>
+                                            <option>01Gudang Jakarta(赛加达仓库)</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="number" class="form-control" value="1"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>0200500343</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <select class="form-select">
+                                            <option>02Gudang Bojo(船厂仓库)</option>
+                                            <option>01Gudang Jakarta(赛加达仓库)</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="number" class="form-control" value="1"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>0200500342</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <select class="form-select">
+                                            <option>02Gudang Bojo(船厂仓库)</option>
+                                            <option>01Gudang Jakarta(赛加达仓库)</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="number" class="form-control" value="1"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>0200202154</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <select class="form-select">
+                                            <option>02Gudang Bojo(船厂仓库)</option>
+                                            <option>01Gudang Jakarta(赛加达仓库)</option>
+                                        </select>
+                                    </td>
+                                    <td><input type="number" class="form-control" value="1"></td>
+                                    <td><input type="text" class="form-control"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="2">BARANG DARI JAKARTA (KEVIN)</textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <div>Rows: 4 | Qty: 16</div>
+                        <div>
+                            <button class="btn btn-primary">Save</button>
+                            <button class="btn btn-outline-secondary">Query</button>
+                            <button class="btn btn-outline-success">New</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
